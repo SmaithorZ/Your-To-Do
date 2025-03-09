@@ -1,0 +1,17 @@
+﻿@model ToDoItem
+
+
+<h2>Add New Task</h2>
+
+
+<form asp-action="Create">
+	<div class="form-group">
+		<label for="Title">Task</label>
+		<input asp-for="Title" class="form-control" required />
+	</div>
+	<button type="submit" class="btn btn-success m-2">Create</button>
+	<a asp-action="Index" class="btn btn-secondary">Back to List</a>
+	
+</form>
+
+
